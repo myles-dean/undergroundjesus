@@ -1,0 +1,269 @@
+:root {
+  --red-dark: #cc001f;
+  --red: #e60023;
+  --black: #0f0f0f;
+  --white: #eee;
+}
+
+.bold-nav-full__hamburger {
+  pointer-events: auto;
+  color: #f4f4f4;
+  cursor: pointer;
+  background-color: #0000;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.bold-nav-full__li {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.bold-nav-full__ul {
+  flex-flow: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.bold-nav-full__logo {
+  pointer-events: auto;
+  color: #f4f4f4;
+  justify-content: center;
+  align-items: center;
+  width: 14em;
+  display: flex;
+}
+
+.bold-nav__word {
+  opacity: .5;
+  margin-bottom: 0;
+  font-size: 1.125em;
+  position: relative;
+}
+
+.bold-nav-full {
+  z-index: 100;
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+}
+
+.bold-nav-full__tile {
+  background-color: var(--red-dark);
+  pointer-events: auto;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bold-nav-full__link {
+  color: #f4f4f4;
+  letter-spacing: -.04em;
+  padding-left: .075em;
+  padding-right: .075em;
+  font-size: calc(4vw + 4vh);
+  font-weight: 400;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.bold-nav-full__link.is--current {
+  color: var(--red);
+}
+
+.bold-nav-full__link-text {
+  text-transform: uppercase;
+  text-shadow: 0 1.1em 0;
+  font-weight: 700;
+  display: block;
+  position: relative;
+}
+
+.bold-nav__bottom {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2.25em 2.5em;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bold-nav-full__hamburger-bar {
+  background-color: currentColor;
+  width: 2em;
+  height: .125em;
+  position: absolute;
+}
+
+.bold-nav-full__bar {
+  z-index: 1;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2.5em;
+  display: flex;
+  position: absolute;
+}
+
+.code {
+  display: none;
+}
+
+.body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: gotham, sans-serif;
+  font-size: 15px;
+}
+
+.texture {
+  z-index: 1000;
+  opacity: .23;
+  pointer-events: none;
+  background-image: url('../images/50-Shades-of-Grunge_result.avif');
+  background-position: 50%;
+  background-size: cover;
+  position: fixed;
+  inset: 0;
+}
+
+.section {
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.section.scale {
+  height: 100svh;
+}
+
+.section.scale.hero {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+}
+
+.crown {
+  z-index: -1;
+  aspect-ratio: 16 / 9;
+  opacity: 1;
+  mix-blend-mode: lighten;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading {
+  color: var(--red);
+  text-transform: uppercase;
+  font-family: dharma-gothic-c, sans-serif;
+  font-size: 30em;
+  font-weight: 700;
+  line-height: .75;
+}
+
+.text-block {
+  color: var(--white);
+  letter-spacing: .5em;
+  text-transform: uppercase;
+  font-family: gotham, sans-serif;
+  font-size: 8em;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+  right: -.25em;
+}
+
+.div-block {
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.text-block-2 {
+  color: #eeeeeef2;
+  text-transform: uppercase;
+  background-color: #eeeeee24;
+  border: 1px solid #eeeeee1f;
+  border-radius: .12em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: .2em .4em;
+  font-family: gotham, sans-serif;
+  font-weight: 400;
+}
+
+.text-block-2._2 {
+  margin-bottom: 0;
+}
+
+.btn-slanted {
+  background-color: var(--red);
+  color: #fff;
+  border-radius: .125em;
+  padding: .625em 1em;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-slanted-label__wrap {
+  z-index: 1;
+  text-transform: uppercase;
+  place-items: center;
+  font-family: gotham, sans-serif;
+  font-weight: 700;
+  display: grid;
+  position: relative;
+}
+
+.btn-slanted-bg {
+  z-index: 0;
+  background-color: var(--red-dark);
+  transform-origin: 50% 0;
+  border-radius: inherit;
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  right: 0;
+  transform: rotate(-30deg)translate(0%, 200%);
+}
+
+.div-block-2 {
+  padding-top: 2em;
+}
+
+
