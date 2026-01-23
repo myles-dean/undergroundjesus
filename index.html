@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Jan 08 2026 17:14:12 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Fri Jan 23 2026 20:59:23 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="695c44c4a1d4fc2135f06600" data-wf-site="695c44c2a1d4fc2135f065d0">
 <head>
   <meta charset="utf-8">
@@ -11,11 +11,16 @@
   <script src="https://use.typekit.net/gmm4tfn.js" type="text/javascript"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
-  <nav data-navigation-status="not-active" class="bold-nav-full">
+  <div class="scripts w-embed w-script">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  </div>
+  <nav data-navigation-status="not-active" class="bold-nav-full hidden">
     <div class="bold-nav-full__bar">
       <a href="#" class="bold-nav-full__logo w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 3026 643" fill="none">
           <path d="M969.704 296.654C930.382 296.654 905.682 276.697 905.682 233.423V155.766H944.609V232.632C944.609 252.59 954.687 262.074 970.1 262.074C985.512 262.074 995.59 252.985 995.59 233.62V155.766H1034.52V232.435C1034.52 277.092 1009.03 296.654 969.704 296.654Z" fill="currentColor"></path>
@@ -35,11 +40,17 @@
           <path d="M1490.14 514.22C1450.82 514.22 1426.12 494.262 1426.12 450.988V373.332H1465.04V450.198C1465.04 470.155 1475.12 479.64 1490.53 479.64C1505.95 479.64 1516.02 470.55 1516.02 451.186V373.332H1554.95V450C1554.95 494.657 1529.46 514.22 1490.14 514.22Z" fill="currentColor"></path>
           <path d="M1681.38 514.022C1656.87 514.022 1633.56 506.316 1616.56 491.101L1637.9 465.61C1651.54 476.478 1666.75 482.209 1682.76 482.209C1693.03 482.209 1698.57 478.652 1698.57 472.724V472.329C1698.57 466.598 1694.02 463.437 1675.25 459.09C1645.81 452.371 1623.08 444.072 1623.08 415.618V415.223C1623.08 389.535 1643.44 370.961 1676.63 370.961C1700.15 370.961 1718.52 377.284 1733.54 389.337L1714.38 416.408C1701.73 407.516 1687.9 402.774 1675.65 402.774C1666.36 402.774 1661.81 406.726 1661.81 411.666V412.061C1661.81 418.384 1666.56 421.151 1685.72 425.498C1717.54 432.414 1737.3 442.689 1737.3 468.574V468.97C1737.3 497.226 1714.97 514.022 1681.38 514.022Z" fill="currentColor"></path>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M188.5 64.2642C193.5 65 201.5 66.5 209.655 54C213.314 49.5586 201.66 34 193 24.5C212.5 27 238.161 26.9304 247.5 21.3148C294.196 -6.76354 353.566 -7.04327 400.5 20.1346C407.444 24.1557 426.168 25.6328 449.168 7.63281C436.168 33.1328 437.345 49.7068 444.552 59.3021C451.825 59.0091 463.168 58.6328 472.168 36.1328C478.668 52.6328 481.892 62.3377 489.5 64.434C551.041 81.3902 596.753 137.336 599.775 202C599.968 206.134 613.668 210.633 626.668 217.133C609.168 224.133 598.992 226.522 598.002 232.594C596.471 241.987 594.009 251.459 590.541 260.927L590.466 261.131C596.136 267.653 612.668 269.133 636.168 267.952C624.668 279.133 612.526 294.029 615.313 300.5C640.817 359.723 624.591 429.105 577.5 471.34C572.951 475.42 577.5 486.133 578.668 502.133C564.168 492.133 550.701 490.646 544 493.938C541.632 495.101 539.219 496.21 536.761 497.26C535.608 503.705 534.067 509.957 532.17 516C530.215 522.226 547.668 531.633 553.168 538.133C541.168 538.633 519.619 545.081 516.362 550.265C484.662 600.717 424.58 628.162 365.5 618.696C359.647 617.758 352.5 626.094 343 631.5C343 618.696 339.639 612.167 335.5 610.561C331.833 609.138 324.843 609 322 609C315.5 609.5 311.832 610.42 308 613.526C304.168 616.633 302 623 310 643C299 634.5 283.866 620.78 278 621.73C219.803 631.157 159.426 605.002 127.187 554.5C122.978 547.907 99.1336 541.5 86.5151 538.5C94.1336 529.425 110.445 523.008 108.634 516.6C107.331 511.992 104.634 505.542 100.261 501C90.6336 491 74.6336 483.5 63.6336 522.5C52.1336 498.889 47.8461 466.983 40.4368 458.785C2.81333 417.154 -8.87855 356.359 11.6717 303.5C14.758 295.561 -1.82816 270 0.167172 256C16.668 264 30.378 269.261 34.6375 264C38.0473 260 44.5532 248.9 43.2982 236.5C42.3143 230.121 34.6375 224.647 11.6717 232C16.6718 216.5 42.4077 194.502 44.7331 183.5C55.4652 132.725 92.4668 90.2254 141.5 72.7653C148.439 70.2943 154.709 55.5 158.5 41.5C167.5 51 183.5 63.5285 188.5 64.2642ZM291.247 585.533C231.609 605.667 163.245 574.266 142.114 512.065L197.513 529.425C207.921 532.687 217.827 537.375 226.947 543.357L291.247 585.533ZM395.262 550.265C407.846 539.639 422.515 531.764 438.326 527.149L500.799 508.911C480.469 568.662 415.358 601.503 355.713 583.661L395.262 550.265ZM422.58 94.4945C424.551 94.029 426.517 93.6154 428.476 93.2514L471.396 169.117C476.45 178.049 468.5 189.5 457 217.904C483.5 206.5 503.678 210.696 510 217.904C524.22 234.12 536.394 248.002 553.889 267.952L525.754 344.766C523.924 349.762 494.5 349.5 483.5 352C503 362.5 518.188 373.534 517.452 380.423L507.497 473.62L429.358 496.431C419.873 499.2 403 497.26 389 482C389 501.5 383.064 518.683 374.617 525.817L329.834 563.632C327.806 565.345 325.745 566.973 323.657 568.521L244.498 516.6C238.869 512.908 241.134 493.5 241.134 476.181C231.134 486.5 213.889 501.022 207.082 498.889L134.617 476.181L118.108 373.743C117.564 370.369 138.134 367.5 149.634 365C136.134 361.5 113.879 354.893 112.455 350.578L82.7436 260.597L141.624 204.5C141.624 204.5 151.634 195 171.634 200.5L171.585 200.181C169.61 187.35 168.214 178.276 172.99 172C176.272 167.687 179.322 163.194 182.124 158.54L217.977 98.9935L300.099 111.942C307.692 113.139 316 129.5 324 148C335 121.5 346.455 112.467 357.925 109.759L422.58 94.4945ZM100.261 464.132C33.2758 432.103 12.6318 345.301 57.6176 286.561L82.0688 360.611C84.0322 366.557 85.5187 372.651 86.5151 378.833L100.261 464.132ZM549.271 383.822C550.294 374.24 552.488 364.82 555.802 355.772L577.348 296.945C612.061 351.951 594.573 424.64 541.262 458.785L549.271 383.822ZM513.233 173.058C507.909 166.988 503.223 160.387 499.248 153.36L464.583 92.0873C530.584 100.246 579.561 164.389 565.444 232.594L513.233 173.058ZM74.0863 224.647C68.1078 159.854 117.285 101.65 182.059 96.6107L154.709 142.034C149.272 151.065 142.648 159.326 135.016 166.598L74.0863 224.647ZM238.324 69.807C283.178 20.8259 360.637 19.5858 407.28 65.2269L350.573 78.6146C335.665 82.1343 320.214 82.7179 305.083 80.3324L238.324 69.807Z" fill="currentColor"></path>
-        </svg></a><button data-navigation-toggle="toggle" class="bold-nav-full__hamburger">
-        <div class="bold-nav-full__hamburger-bar"></div>
-        <div class="bold-nav-full__hamburger-bar"></div>
-        <div class="bold-nav-full__hamburger-bar"></div>
-      </button>
+        </svg></a>
+      <div class="div-block-4">
+        <a href="https://square.link/u/Luqsp91P" target="_blank" class="btn-slanted w-inline-block">
+          <div class="btn-slanted-label__wrap"><span class="btn-slanted-label">donate</span><span aria-hidden="true" class="btn-slanted-label">donate</span></div>
+          <div class="btn-slanted-bg"></div>
+        </a><button data-navigation-toggle="toggle" class="bold-nav-full__hamburger">
+          <div class="bold-nav-full__hamburger-bar"></div>
+          <div class="bold-nav-full__hamburger-bar"></div>
+          <div class="bold-nav-full__hamburger-bar"></div>
+        </button>
+      </div>
     </div>
     <div class="bold-nav-full__tile">
       <ul class="bold-nav-full__ul">
@@ -68,15 +79,44 @@
   <div class="texture"></div>
   <section class="section scale hero">
     <div class="div-block">
+      <div class="div-block-5"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 2120 1215" fill="none">
+          <path d="M64.022 996.654C24.6998 996.654 0 976.697 0 933.423V855.766H38.9269V932.632C38.9269 952.59 49.0045 962.074 64.4172 962.074C79.8299 962.074 89.9074 952.985 89.9074 933.62V855.766H128.834V932.435C128.834 977.092 103.344 996.654 64.022 996.654Z" fill="currentColor"></path>
+          <path d="M200.921 994.085V855.766H236.686L293.595 928.878V855.766H331.534V994.085H297.942L238.86 918.208V994.085H200.921Z" fill="currentColor"></path>
+          <path d="M405.466 994.085V855.766H458.818C508.218 855.766 536.87 884.221 536.87 924.136V924.531C536.87 964.446 507.823 994.085 458.028 994.085H405.466ZM443.801 960.099H459.411C482.332 960.099 497.547 947.452 497.547 925.124V924.728C497.547 902.597 482.332 889.753 459.411 889.753H443.801V960.099Z" fill="currentColor"></path>
+          <path d="M605.96 994.085V855.766H717.208V888.37H643.899V909.316H710.292V939.548H643.899V961.482H718.196V994.085H605.96Z" fill="currentColor"></path>
+          <path d="M787.156 994.085V855.766H852.561C873.704 855.766 888.327 861.299 897.614 870.784C905.715 878.688 909.865 889.358 909.865 902.992V903.388C909.865 924.531 898.602 938.56 881.411 945.871L914.41 994.085H870.148L842.286 952.195H825.49V994.085H787.156ZM825.49 922.16H850.783C863.824 922.16 871.333 915.836 871.333 905.759V905.364C871.333 894.496 863.429 888.963 850.585 888.963H825.49V922.16Z" fill="currentColor"></path>
+          <path d="M1049.12 996.852C1006.05 996.852 973.837 967.212 973.837 925.321V924.926C973.837 884.616 1005.45 853 1048.33 853C1072.64 853 1089.83 860.509 1104.45 873.155L1081.92 900.226C1072.04 891.927 1062.16 887.185 1048.53 887.185C1028.57 887.185 1013.16 903.98 1013.16 925.124V925.519C1013.16 947.847 1028.77 963.853 1050.7 963.853C1059.99 963.853 1067.1 961.877 1072.83 958.123V941.327H1045.57V913.268H1109.19V975.511C1094.57 987.565 1074.22 996.852 1049.12 996.852Z" fill="currentColor"></path>
+          <path d="M1179.84 994.085V855.766H1245.25C1266.39 855.766 1281.02 861.299 1290.3 870.784C1298.4 878.688 1302.55 889.358 1302.55 902.992V903.388C1302.55 924.531 1291.29 938.56 1274.1 945.871L1307.1 994.085H1262.84L1234.97 952.195H1218.18V994.085H1179.84ZM1218.18 922.16H1243.47C1256.51 922.16 1264.02 915.836 1264.02 905.759V905.364C1264.02 894.496 1256.12 888.963 1243.27 888.963H1218.18V922.16Z" fill="currentColor"></path>
+          <path d="M1440.82 996.852C1398.14 996.852 1366.53 965.038 1366.53 925.321V924.926C1366.53 885.209 1398.54 853 1441.22 853C1483.9 853 1515.52 884.813 1515.52 924.531V924.926C1515.52 964.643 1483.5 996.852 1440.82 996.852ZM1441.22 962.272C1462.36 962.272 1476.39 945.279 1476.39 925.321V924.926C1476.39 904.968 1461.97 887.58 1440.82 887.58C1419.88 887.58 1405.85 904.573 1405.85 924.531V924.926C1405.85 944.883 1420.27 962.272 1441.22 962.272Z" fill="currentColor"></path>
+          <path d="M1647.13 996.654C1607.8 996.654 1583.11 976.697 1583.11 933.423V855.766H1622.03V932.632C1622.03 952.59 1632.11 962.074 1647.52 962.074C1662.94 962.074 1673.01 952.985 1673.01 933.62V855.766H1711.94V932.435C1711.94 977.092 1686.45 996.654 1647.13 996.654Z" fill="currentColor"></path>
+          <path d="M1784.03 994.085V855.766H1819.79L1876.7 928.878V855.766H1914.64V994.085H1881.05L1821.96 918.208V994.085H1784.03Z" fill="currentColor"></path>
+          <path d="M1988.57 994.085V855.766H2041.92C2091.32 855.766 2119.97 884.221 2119.97 924.136V924.531C2119.97 964.446 2090.93 994.085 2041.13 994.085H1988.57ZM2026.91 960.099H2042.52C2065.44 960.099 2080.65 947.452 2080.65 925.124V924.728C2080.65 902.597 2065.44 889.753 2042.52 889.753H2026.91V960.099Z" fill="currentColor"></path>
+          <path d="M687.611 1214.06C663.504 1214.06 648.684 1203.98 639.001 1190.74L663.701 1167.43C670.42 1175.53 676.743 1180.27 685.24 1180.27C694.922 1180.27 701.047 1173.75 701.047 1160.91V1073.37H739.184V1161.11C739.184 1178.49 734.837 1190.74 725.55 1200.03C716.46 1209.12 703.419 1214.06 687.611 1214.06Z" fill="currentColor"></path>
+          <path d="M811.397 1211.69V1073.37H922.645V1105.97H849.336V1126.92H915.729V1157.15H849.336V1179.09H923.633V1211.69H811.397Z" fill="currentColor"></path>
+          <path d="M1046.93 1214.06C1022.43 1214.06 999.114 1206.36 982.121 1191.14L1003.46 1165.65C1017.1 1176.52 1032.31 1182.25 1048.32 1182.25C1058.59 1182.25 1064.12 1178.69 1064.12 1172.76V1172.37C1064.12 1166.64 1059.58 1163.48 1040.81 1159.13C1011.37 1152.41 988.642 1144.11 988.642 1115.66V1115.26C988.642 1089.57 1008.99 1071 1042.19 1071C1065.71 1071 1084.08 1077.32 1099.1 1089.38L1079.93 1116.45C1067.29 1107.56 1053.45 1102.81 1041.2 1102.81C1031.92 1102.81 1027.37 1106.77 1027.37 1111.71V1112.1C1027.37 1118.42 1032.11 1121.19 1051.28 1125.54C1083.09 1132.45 1102.85 1142.73 1102.85 1168.61V1169.01C1102.85 1197.27 1080.52 1214.06 1046.93 1214.06Z" fill="currentColor"></path>
+          <path d="M1233.14 1214.26C1193.82 1214.26 1169.12 1194.3 1169.12 1151.03V1073.37H1208.04V1150.24C1208.04 1170.19 1218.12 1179.68 1233.53 1179.68C1248.95 1179.68 1259.02 1170.59 1259.02 1151.23V1073.37H1297.95V1150.04C1297.95 1194.7 1272.46 1214.26 1233.14 1214.26Z" fill="currentColor"></path>
+          <path d="M1424.38 1214.06C1399.88 1214.06 1376.56 1206.36 1359.57 1191.14L1380.91 1165.65C1394.54 1176.52 1409.76 1182.25 1425.76 1182.25C1436.04 1182.25 1441.57 1178.69 1441.57 1172.76V1172.37C1441.57 1166.64 1437.02 1163.48 1418.25 1159.13C1388.81 1152.41 1366.09 1144.11 1366.09 1115.66V1115.26C1366.09 1089.57 1386.44 1071 1419.64 1071C1443.15 1071 1461.53 1077.32 1476.54 1089.38L1457.38 1116.45C1444.73 1107.56 1430.9 1102.81 1418.65 1102.81C1409.36 1102.81 1404.82 1106.77 1404.82 1111.71V1112.1C1404.82 1118.42 1409.56 1121.19 1428.72 1125.54C1460.54 1132.45 1480.3 1142.73 1480.3 1168.61V1169.01C1480.3 1197.27 1457.97 1214.06 1424.38 1214.06Z" fill="currentColor"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M930.501 64.2642C935.501 65 943.501 66.5 951.657 54C955.316 49.5586 943.661 34 935.001 24.5C954.501 27 980.162 26.9304 989.501 21.3148C1036.2 -6.76354 1095.57 -7.04327 1142.5 20.1346C1149.45 24.1557 1168.17 25.6328 1191.17 7.63281C1178.17 33.1328 1179.35 49.7068 1186.55 59.3021C1193.83 59.0091 1205.17 58.6328 1214.17 36.1328C1220.67 52.6328 1223.89 62.3377 1231.5 64.434C1293.04 81.3902 1338.75 137.336 1341.78 202C1341.97 206.134 1355.67 210.633 1368.67 217.133C1351.17 224.133 1340.99 226.522 1340 232.594C1338.47 241.987 1336.01 251.459 1332.54 260.927L1332.47 261.131C1338.14 267.653 1354.67 269.133 1378.17 267.952C1366.67 279.133 1354.53 294.029 1357.31 300.5C1382.82 359.723 1366.59 429.105 1319.5 471.34C1314.95 475.42 1319.5 486.133 1320.67 502.133C1306.17 492.133 1292.7 490.646 1286 493.938C1283.63 495.101 1281.22 496.21 1278.76 497.26C1277.61 503.705 1276.07 509.957 1274.17 516C1272.22 522.226 1289.67 531.633 1295.17 538.133C1283.17 538.633 1261.62 545.081 1258.36 550.265C1226.66 600.717 1166.58 628.161 1107.5 618.696C1101.65 617.758 1094.5 626.094 1085 631.5C1085 618.696 1081.64 612.167 1077.5 610.561C1073.83 609.138 1066.84 609 1064 609C1057.5 609.5 1053.83 610.42 1050 613.526C1046.17 616.633 1044 623 1052 643C1041 634.5 1025.87 620.78 1020 621.73C961.805 631.157 901.428 605.002 869.189 554.5C864.98 547.907 841.135 541.5 828.517 538.5C836.135 529.425 852.447 523.008 850.635 516.6C849.332 511.992 846.635 505.542 842.263 501C832.635 491 816.635 483.5 805.635 522.5C794.135 498.889 789.848 466.983 782.438 458.785C744.815 417.154 733.123 356.359 753.673 303.5C756.759 295.561 740.173 270 742.169 256C758.669 264 772.379 269.261 776.639 264C780.049 260 786.555 248.9 785.3 236.5C784.316 230.121 776.639 224.647 753.673 232C758.673 216.5 784.409 194.502 786.735 183.5C797.467 132.725 834.468 90.2254 883.501 72.7653C890.441 70.2943 896.711 55.5 900.501 41.5C909.501 51 925.501 63.5285 930.501 64.2642ZM1033.25 585.533C973.61 605.667 905.246 574.266 884.115 512.065L939.515 529.425C949.922 532.687 959.828 537.375 968.948 543.357L1033.25 585.533ZM1137.26 550.265C1149.85 539.639 1164.52 531.764 1180.33 527.149L1242.8 508.911C1222.47 568.662 1157.36 601.503 1097.71 583.661L1137.26 550.265ZM1164.58 94.4945C1166.55 94.029 1168.52 93.6154 1170.48 93.2514L1213.4 169.117C1218.45 178.049 1210.5 189.5 1199 217.904C1225.5 206.5 1245.68 210.696 1252 217.904C1266.22 234.12 1278.4 248.002 1295.89 267.952L1267.76 344.766C1265.93 349.762 1236.5 349.5 1225.5 352C1245 362.5 1260.19 373.534 1259.45 380.423L1249.5 473.62L1171.36 496.431C1161.87 499.2 1145 497.26 1131 482C1131 501.5 1125.07 518.683 1116.62 525.817L1071.84 563.632C1069.81 565.345 1067.75 566.973 1065.66 568.521L986.499 516.6C980.87 512.908 983.135 493.5 983.135 476.181C973.135 486.5 955.891 501.022 949.084 498.889L876.618 476.181L860.109 373.743C859.566 370.369 880.135 367.5 891.635 365C878.135 361.5 855.881 354.893 854.456 350.578L824.745 260.597L883.626 204.5C883.626 204.5 893.635 195 913.635 200.5L913.586 200.181C911.612 187.35 910.215 178.276 914.991 172C918.273 167.687 921.323 163.194 924.125 158.54L959.978 98.9935L1042.1 111.942C1049.69 113.139 1058 129.5 1066 148C1077 121.5 1088.46 112.467 1099.93 109.759L1164.58 94.4945ZM842.263 464.132C775.277 432.103 754.633 345.301 799.619 286.561L824.07 360.611C826.034 366.557 827.52 372.651 828.517 378.833L842.263 464.132ZM1291.27 383.822C1292.3 374.24 1294.49 364.82 1297.8 355.772L1319.35 296.945C1354.06 351.951 1336.57 424.64 1283.26 458.785L1291.27 383.822ZM1255.23 173.058C1249.91 166.988 1245.22 160.387 1241.25 153.36L1206.58 92.0873C1272.59 100.246 1321.56 164.389 1307.45 232.594L1255.23 173.058ZM816.088 224.647C810.109 159.854 859.286 101.65 924.061 96.6107L896.711 142.034C891.273 151.065 884.65 159.326 877.018 166.598L816.088 224.647ZM980.325 69.807C1025.18 20.8259 1102.64 19.5858 1149.28 65.2269L1092.57 78.6146C1077.67 82.1343 1062.22 82.7179 1047.08 80.3324L980.325 69.807Z" fill="currentColor"></path>
+        </svg></div>
       <div class="text-block-2">Join the Movement</div>
-      <h1 class="heading">disciple</h1>
-      <div class="text-block">making</div>
-      <div class="div-block-2">
-        <a href="https://square.link/u/Luqsp91P" target="_blank" class="btn-slanted w-inline-block">
-          <div class="btn-slanted-label__wrap"><span class="btn-slanted-label">Conference 2026</span><span aria-hidden="true" class="btn-slanted-label">Buy Tickets</span></div>
-          <div class="btn-slanted-bg"></div>
-        </a>
+      <h1 class="heading">Conference</h1>
+      <div class="text-block">2026</div>
+      <div class="div-block-3">
+        <div class="div-block-2">
+          <a href="https://square.link/u/Luqsp91P" target="_blank" class="btn-slanted w-inline-block">
+            <div class="btn-slanted-label__wrap"><span class="btn-slanted-label">tickets</span><span aria-hidden="true" class="btn-slanted-label">Tickets</span></div>
+            <div class="btn-slanted-bg"></div>
+          </a>
+        </div>
+        <div class="div-block-2 hidden-podcast-button">
+          <a href="https://square.link/u/Luqsp91P" target="_blank" class="btn-slanted seconary w-inline-block">
+            <div class="btn-slanted-label__wrap"><span class="btn-slanted-label">podcast</span><span aria-hidden="true" class="btn-slanted-label">Listen</span></div>
+            <div class="btn-slanted-bg secondary"></div>
+          </a>
+        </div>
       </div>
+      <p class="paragraph pricew">Early Bird: $29 <span class="text-span">$149<br>‍</span><span class="text-span-2">Ends June 2nd</span></p>
+      <p class="paragraph">November 4th - 5th | Beginning 9am on the 4th, Ending by 4pm on the 5th.<br>At Mercy Road Church Carmel, 2381 Pointe Pkwy Carmel, IN 46032</p>
     </div>
     <div class="crown">
       <div data-poster-url="videos/apple_1_poster.0000000.jpg" data-video-urls="videos/apple_1_mp4.mp4,videos/apple_1_webm.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="2552ee21-48d1-c41c-bbd2-a7d32bfae55b-video" autoplay="" loop="" style="background-image:url(&quot;videos/apple_1_poster.0000000.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
@@ -85,7 +125,103 @@
         </video></div>
     </div>
   </section>
-  <section class="section scale hero"></section>
+  <section class="section">
+    <div data-sticky-feature-wrap="" class="sticky-features__wrap">
+      <div class="sticky-features__scroll">
+        <div class="sticky-features__container">
+          <div class="sticky-feaures__col is--img">
+            <div class="sticky-features__img-collection">
+              <div class="sticky-features__img-list">
+                <div data-sticky-feature-visual-wrap="" class="sticky-features__img-item"><img sizes="(max-width: 896px) 100vw, 896px" srcset="images/ying-p-500.jpg 500w, images/ying-p-800.jpg 800w, images/ying.jpg 896w" alt="" src="images/ying.jpg" loading="lazy" class="sticky-features__img"></div>
+                <div data-sticky-feature-visual-wrap="" class="sticky-features__img-item"><img sizes="(max-width: 1365px) 100vw, 1365px" srcset="images/428076970_702560342084242_2217655746130716640_n-p-500.jpg 500w, images/428076970_702560342084242_2217655746130716640_n-p-800.jpg 800w, images/428076970_702560342084242_2217655746130716640_n-p-1080.jpg 1080w, images/428076970_702560342084242_2217655746130716640_n.jpg 1365w" alt="" src="images/428076970_702560342084242_2217655746130716640_n.jpg" loading="lazy" class="sticky-features__img"></div>
+                <div data-sticky-feature-visual-wrap="" class="sticky-features__img-item"><img sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/victor-p-500.jpg 500w, images/victor-p-800.jpg 800w, images/victor.jpg 1024w" alt="" src="images/victor.jpg" loading="lazy" class="sticky-features__img"></div>
+              </div>
+            </div>
+            <div class="sticky-features__progress-w">
+              <div data-sticky-feature-progress="" class="sticky-features__progress-bar"></div>
+            </div>
+          </div>
+          <div class="sticky-feaures__col">
+            <div class="sticky-features__text-collection">
+              <div class="sticky-features__text-list">
+                <div data-sticky-feature-item="" class="sticky-features__text-item"><span data-sticky-feature-text="" class="sticky-features__tag">SPEAKER</span>
+                  <h2 data-sticky-feature-text="" class="sticky-features__heading">Ying Kai</h2>
+                  <p data-sticky-feature-text="" class="sticky-features__p">Ying Kai is a pioneering missionary and co-founder of the global Training for Trainers (T4T) movement, an obedience-based discipleship and church-planting approach that has equipped millions of believers to share the gospel and multiply churches worldwide.</p>
+                </div>
+                <div data-sticky-feature-item="" class="sticky-features__text-item"><span data-sticky-feature-text="" class="sticky-features__tag">SPEAKER</span>
+                  <h2 data-sticky-feature-text="" class="sticky-features__heading">Jason Shepperd</h2>
+                  <p data-sticky-feature-text="" class="sticky-features__p">Jason Shepperd is the founder and lead pastor of Church Project, a movement of “churches of house churches” that equips believers to rethink modern church models and follow a decentralized, Scripture-rooted expression of Christian community. He also leads the Church Project Network and other initiatives focused on biblical ecclesiology, discipleship, and church multiplication.</p>
+                </div>
+                <div data-sticky-feature-item="" class="sticky-features__text-item"><span data-sticky-feature-text="" class="sticky-features__tag">SPEAKER</span>
+                  <h2 data-sticky-feature-text="" class="sticky-features__heading">Victor John</h2>
+                  <p data-sticky-feature-text="" class="sticky-features__p">Victor John, an Indian national, served as a pastor for 15 years before shifting to a holistic strategy aiming for a movement among Bhojpuri people. Since the early 1990s he has laboured in planting seed among the Bhojpuri, and continues to play a catalytic role in the large and growing Bhojpuri movement. He is the primary author of Bhojpuri Breakthrough: A Movement that Keeps Multiplying.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section scale large">
+    <div class="div-block-6">
+      <div data-feature-pills-active="false" aria-label="product features" data-feature-pills-init="" data-edit-mode="false" class="feature-pills__wrap">
+        <div class="feature-pills__layout">
+          <div class="feature-pills__col">
+            <div data-feature-pills-collection="" class="feature-pills__info-collection">
+              <ul role="list" data-feature-pills-list="" class="feature-pills__info-list">
+                <h2 data-sticky-feature-text="" class="heading-p">Schedule</h2>
+                <p class="paragraph schedule">NOVEMBER 4TH</p>
+                <li data-feature-pills-item="" data-active="false" class="feature-pills__info-item">
+                  <div class="feature-pills__item-bg"></div><button data-feature-pills-button="" aria-expanded="false" class="feature-pills__item-button"><span class="feature-pills__item-label">Session One</span><span class="feature-pills__item-icon"><span class="feature-pills__item-icon-bar"></span><span class="feature-pills__item-icon-bar is--horizontal"></span></span></button>
+                  <div aria-hidden="true" data-feature-pills-content="" class="feature-pills__item-content">
+                    <div class="feature-pills__item-mask">
+                      <div data-feature-pills-inner="" class="feature-pills__item-inner">
+                        <p class="feature-pills__item-body">Session One<br><br>Begins 9am, more TBD</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li data-feature-pills-item="" data-active="false" class="feature-pills__info-item">
+                  <div class="feature-pills__item-bg"></div><button data-feature-pills-button="" aria-expanded="false" class="feature-pills__item-button"><span class="feature-pills__item-label">Session Two</span><span class="feature-pills__item-icon"><span class="feature-pills__item-icon-bar"></span><span class="feature-pills__item-icon-bar is--horizontal"></span></span></button>
+                  <div aria-hidden="true" data-feature-pills-content="" class="feature-pills__item-content">
+                    <div class="feature-pills__item-mask">
+                      <div data-feature-pills-inner="" class="feature-pills__item-inner">
+                        <p class="feature-pills__item-body">Session Two<br><br>Time TBD</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <p class="paragraph schedule">NOVEMBER 5TH</p>
+                <li data-feature-pills-item="" data-active="false" class="feature-pills__info-item">
+                  <div class="feature-pills__item-bg"></div><button data-feature-pills-button="" aria-expanded="false" class="feature-pills__item-button"><span class="feature-pills__item-label">Session Three</span><span class="feature-pills__item-icon"><span class="feature-pills__item-icon-bar"></span><span class="feature-pills__item-icon-bar is--horizontal"></span></span></button>
+                  <div aria-hidden="true" data-feature-pills-content="" class="feature-pills__item-content">
+                    <div class="feature-pills__item-mask">
+                      <div data-feature-pills-inner="" class="feature-pills__item-inner">
+                        <p class="feature-pills__item-body">Session Three<br><br>Time TBD, ends by 4pm</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <p class="paragraph schedule">More info coming soon.</p>
+              </ul>
+            </div>
+          </div>
+          <div class="feature-pills__col is--visual">
+            <div class="feature-pills__visual-collection">
+              <div class="feature-pills__visual-list">
+                <div aria-hidden="true" data-feature-pills-visual="" class="feature-pills__visual-item"><img loading="lazy" src="images/Motion-Blur-Portrait_1Motion-Blur-Portrait.avif" alt="" class="feature-pills__visual-img"></div>
+                <div aria-hidden="true" data-feature-pills-visual="" class="feature-pills__visual-item"><img loading="lazy" src="images/Snowboarding-Adventure_1Snowboarding-Adventure.avif" alt="" class="feature-pills__visual-img"></div>
+                <div aria-hidden="true" data-feature-pills-visual="" class="feature-pills__visual-item"><img loading="lazy" src="images/Dynamic-Skiing-Action_1Dynamic-Skiing-Action.avif" alt="" class="feature-pills__visual-img"></div>
+              </div>
+            </div>
+            <div data-feature-pills-cover="" class="feature-pills__visual-cover"><img loading="lazy" src="images/expanding-features-placeholder-v3_1expanding-features-placeholder-v3.avif" alt="" class="feature-pills__visual-cover-img"></div>
+          </div>
+        </div>
+        <div class="feature-pills__close"><button data-feature-pills-close="" aria-hidden="true" class="feature-pills__close-button"><span class="feature-pills__item-icon-bar"></span><span class="feature-pills__item-icon-bar is--horizontal"></span></button></div>
+      </div>
+    </div>
+  </section>
   <div class="code">
     <div class="nav-js w-embed w-script">
       <script>
@@ -266,6 +402,408 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 .btn-slanted:focus-visible .btn-slanted-bg{
   transform: translate(0%, 0%) rotate(0deg);
+}
+</style>
+    </div>
+    <div class="sticky-js w-embed w-script">
+      <script>
+gsap.registerPlugin(ScrollTrigger);
+function initStickyFeatures(root){
+  const wraps = Array.from((root || document).querySelectorAll("[data-sticky-feature-wrap]"));
+  if(!wraps.length) return;
+  wraps.forEach(w => {
+    const visualWraps = Array.from(w.querySelectorAll("[data-sticky-feature-visual-wrap]"));
+    const items = Array.from(w.querySelectorAll("[data-sticky-feature-item]"));
+    const progressBar = w.querySelector("[data-sticky-feature-progress]");
+    if (visualWraps.length !== items.length) {
+      console.warn("[initStickyFeatures] visualWraps and items count do not match:", {
+        visualWraps: visualWraps.length,
+        items: items.length,
+        wrap: w
+      });
+    }
+    const count = Math.min(visualWraps.length, items.length);
+    if(count < 1) return;
+    const rm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const DURATION = rm ? 0.01 : 0.75; // If user prefers reduced motion, reduce duration
+    const EASE = "power4.inOut";
+    const SCROLL_AMOUNT = 0.9; // % of scroll used for step transitions
+    const getTexts = el => Array.from(el.querySelectorAll("[data-sticky-feature-text]"));
+    if(visualWraps[0]) gsap.set(visualWraps[0], { clipPath: "inset(0% round 0.75em)" });
+    gsap.set(items[0], { autoAlpha: 1 });
+    let currentIndex = 0;
+    // Transition Function
+    function transition(fromIndex, toIndex){
+      if(fromIndex === toIndex) return;
+      const tl = gsap.timeline({ defaults: { overwrite: "auto" } });
+      if(fromIndex < toIndex){
+        tl.to(visualWraps[toIndex], { 
+          clipPath: "inset(0% round 0.75em)",
+          duration: DURATION,
+          ease: EASE
+        }, 0);
+      } else {
+        tl.to(visualWraps[fromIndex], { 
+          clipPath: "inset(50% round 0.75em)",
+          duration: DURATION,
+          ease: EASE
+        }, 0);
+      }
+      animateOut(items[fromIndex]);
+      animateIn(items[toIndex]);
+    }
+    // Fade out text content items
+    function animateOut(itemEl){
+      const texts = getTexts(itemEl);
+      gsap.to(texts, {
+        autoAlpha: 0,
+        y: -30,
+        ease: "power4.out",
+        duration: 0.4,
+        onComplete: () => gsap.set(itemEl, { autoAlpha: 0 })
+      });
+    }
+    // Reveal incoming text content items
+    function animateIn(itemEl){
+      const texts = getTexts(itemEl);
+      gsap.set(itemEl, { autoAlpha: 1 });
+      gsap.fromTo(texts, {
+        autoAlpha: 0, 
+        y: 30
+      }, {
+        autoAlpha: 1,
+        y: 0,
+        ease: "power4.out",
+        duration: DURATION,
+        stagger: 0.1
+      });
+    }
+    const steps = Math.max(1, count - 1);
+    ScrollTrigger.create({
+      trigger: w,
+      start: "center center",
+      end: () => `+=${steps * 100}%`,
+      pin: true,
+      scrub: true,
+      invalidateOnRefresh: true,
+      onUpdate: self => {
+        const p = Math.min(self.progress, SCROLL_AMOUNT) / SCROLL_AMOUNT;
+        let idx = Math.floor(p * steps + 1e-6);
+        idx = Math.max(0, Math.min(steps, idx));
+        gsap.to(progressBar,{
+          scaleX: p,
+          ease: "none"
+        })
+        if (idx !== currentIndex) {
+          transition(currentIndex, idx);
+          currentIndex = idx;
+        }
+      }
+    });
+  });
+}
+// Initialize Sticky Features
+document.addEventListener("DOMContentLoaded", () =>{
+  initStickyFeatures();
+});
+</script>
+    </div>
+    <div class="sticky-css w-embed">
+      <style>
+/* Webflow Designer resets to show hidden content: */
+.wf-design-mode .sticky-features__text-list{ overflow: auto; max-height: 45em; gap: 2em; justify-content:flex-start;}
+.wf-design-mode .sticky-features__text-item{ position: relative; }
+.wf-design-mode [data-sticky-feature-item]{ visibility: visible; }
+/* Show only 1st items on live site */
+[data-sticky-feature-visual-wrap]:first-of-type{ clip-path: inset(0% round 0.75em); }
+[data-sticky-feature-item]:first-of-type{ visibility: visible; }
+</style>
+    </div>
+    <div class="w-embed w-script">
+      <script>
+function initExpandingFeaturePills() {
+  const wraps = document.querySelectorAll("[data-feature-pills-init]");
+  if (!wraps.length) return;
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  wraps.forEach((wrap, wrapIdx) => {
+    const items = Array.from(wrap.querySelectorAll("[data-feature-pills-item]"));
+    const visuals = Array.from(wrap.querySelectorAll("[data-feature-pills-visual]"));
+    const cover = wrap.querySelector("[data-feature-pills-cover]");
+    const closeBtn = wrap.querySelector("[data-feature-pills-close]");
+    if (!items.length) return;
+    if (visuals.length && visuals.length !== items.length) {
+      console.warn(
+        `[ExpandingFeaturePills] items (${items.length}) and visuals (${visuals.length}) mismatch in module #${wrapIdx}. Visual syncing uses index order.`
+      );
+    }
+    const uidBase = `feature-pills-${wrapIdx}`;
+    const ease = "back.out(2)";
+    const animationDuration = 0.5;
+    const getExpandedWidth = () =>
+      getComputedStyle(wrap).getPropertyValue("--content-item-expanded").trim() || "";
+    const getActiveIndex = () => {
+      const active = items.find((it) => it.getAttribute("data-active") === "true");
+      return active ? Number(active.getAttribute("data-feature-pills-index")) : null;
+    };
+    const setWrapActive = (isActive) => {
+      wrap.setAttribute("data-feature-pills-active", isActive ? "true" : "false");
+      if (closeBtn) closeBtn.setAttribute("aria-hidden", isActive ? "false" : "true");
+      if (cover) {
+        cover.setAttribute("data-active", isActive ? "false" : "true");
+        cover.setAttribute("aria-hidden", isActive ? "true" : "false");
+      }
+    };
+    const setVisualActive = (indexOrNull) => {
+      if (!visuals.length) return;
+      visuals.forEach((v) => {
+        const idx = Number(v.getAttribute("data-feature-pills-index"));
+        const isActive = indexOrNull !== null && idx === indexOrNull;
+        v.setAttribute("data-active", isActive ? "true" : "false");
+        v.setAttribute("aria-hidden", isActive ? "false" : "true");
+      });
+    };
+    const setItemA11y = (item, isOpen) => {
+      const btn = item.querySelector("[data-feature-pills-button]");
+      const content = item.querySelector("[data-feature-pills-content]");
+      if (!btn || !content) return;
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      content.setAttribute("aria-hidden", isOpen ? "false" : "true");
+    };
+    const measureButtonH = (item) => {
+      const btn = item.querySelector("[data-feature-pills-button]");
+      return btn ? Math.ceil(btn.getBoundingClientRect().height) : 0;
+    };
+    const measureInnerH = (item, expandedW) => {
+      const inner = item.querySelector("[data-feature-pills-inner]");
+      if (!inner) return 0;
+      const mask = item.querySelector(".feature-pills__item-mask");
+      const prevMaskOverflow = mask ? mask.style.overflow : null;
+      if (mask) mask.style.overflow = "visible";
+      const prevMaxW = inner.style.maxWidth;
+      if (expandedW) inner.style.maxWidth = expandedW;
+      const h = Math.ceil(inner.getBoundingClientRect().height);
+      if (expandedW) inner.style.maxWidth = prevMaxW || "";
+      if (mask) mask.style.overflow = prevMaskOverflow || "";
+      return h;
+    };
+    const getHeights = (item, expandedW) => {
+      const buttonH = measureButtonH(item);
+      const innerH = measureInnerH(item, expandedW);
+      const openH = Math.max(buttonH, innerH);
+      return { buttonH, openH };
+    };
+    const collapsedWidthPx = new Map();
+    const captureCollapsedWidths = () => {
+      items.forEach((item) => {
+        const prev = item.style.width;
+        item.style.width = "";
+        collapsedWidthPx.set(item, Math.ceil(item.getBoundingClientRect().width));
+        item.style.width = prev;
+      });
+    };
+    const animateBox = (el, vars) => {
+      gsap.killTweensOf(el);
+      if (prefersReducedMotion) {
+        if (vars.height != null) el.style.height = `${vars.height}px`;
+        if (vars.width != null) el.style.width = typeof vars.width === "number" ? `${vars.width}px` : vars.width;
+        return;
+      }
+      gsap.to(el, { ...vars, duration: animationDuration, ease, overwrite: true });
+    };
+    const openItem = (item) => {
+      const expandedW = getExpandedWidth();
+      const { openH } = getHeights(item, expandedW);
+      item.setAttribute("data-active", "true");
+      setItemA11y(item, true);
+      setWrapActive(true);
+      const targetW = expandedW || `${collapsedWidthPx.get(item) || Math.ceil(item.getBoundingClientRect().width)}px`;
+      animateBox(item, { height: openH, width: targetW });
+    };
+    const closeItem = (item) => {
+      const expandedW = getExpandedWidth();
+      const { buttonH } = getHeights(item, expandedW);
+      item.setAttribute("data-active", "false");
+      setItemA11y(item, false);
+      const targetW = collapsedWidthPx.get(item) || Math.ceil(item.getBoundingClientRect().width);
+      animateBox(item, { height: buttonH, width: targetW });
+    };
+    const switchTo = (nextIndex) => {
+      const current = getActiveIndex();
+      if (current === nextIndex) return;
+      const nextItem = items[nextIndex];
+      if (!nextItem) return;
+      if (current !== null) closeItem(items[current]);
+      openItem(nextItem);
+      setVisualActive(nextIndex);
+    };
+    const closeAll = () => {
+      const current = getActiveIndex();
+      if (current === null) return;
+      closeItem(items[current]);
+      setVisualActive(null);
+      setWrapActive(false);
+    };
+    items.forEach((item, i) => {
+      item.setAttribute("data-feature-pills-index", String(i));
+      if (!item.hasAttribute("data-active")) item.setAttribute("data-active", "false");
+      const btn = item.querySelector("[data-feature-pills-button]");
+      const content = item.querySelector("[data-feature-pills-content]");
+      if (btn) {
+        btn.setAttribute("data-feature-pills-index", String(i));
+        btn.type = "button";
+        const triggerId = `${uidBase}-trigger-${i}`;
+        if (!btn.id) btn.id = triggerId;
+      }
+      if (content && btn) {
+        content.setAttribute("data-feature-pills-index", String(i));
+        const panelId = `${uidBase}-panel-${i}`;
+        if (!content.id) content.id = panelId;
+        btn.setAttribute("aria-controls", content.id);
+        content.setAttribute("role", "region");
+        content.setAttribute("aria-labelledby", btn.id);
+        if (!content.hasAttribute("aria-hidden")) content.setAttribute("aria-hidden", "true");
+        if (!btn.hasAttribute("aria-expanded")) btn.setAttribute("aria-expanded", "false");
+      }
+    });
+    visuals.forEach((v, i) => v.setAttribute("data-feature-pills-index", String(i)));
+    if (closeBtn) {
+      closeBtn.type = "button";
+      if (!closeBtn.hasAttribute("aria-hidden")) closeBtn.setAttribute("aria-hidden", "true");
+      closeBtn.addEventListener("click", closeAll);
+    }
+    items.forEach((item) => {
+      const h = measureButtonH(item);
+      item.style.height = `${h}px`;
+    });
+    setWrapActive(false);
+    setVisualActive(null);
+    items.forEach((item, i) => {
+      const btn = item.querySelector("[data-feature-pills-button]");
+      if (!btn) return;
+      btn.addEventListener("click", () => switchTo(i));
+    });
+    wrap.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeAll();
+    });
+    const debounce = (fn, wait = 150) => {
+      let t;
+      return (...args) => {
+        clearTimeout(t);
+        t = setTimeout(() => fn(...args), wait);
+      };
+    };
+    const handleResize = () => {
+      const current = getActiveIndex();
+      items.forEach((item) => {
+        if (item.getAttribute("data-active") !== "true") item.style.width = "";
+      });
+      captureCollapsedWidths();
+      if (current !== null) {
+        const item = items[current];
+        const expandedW = getExpandedWidth();
+        const { openH } = getHeights(item, expandedW);
+        const targetW = expandedW || "";
+        if (prefersReducedMotion) {
+          item.style.height = `${openH}px`;
+          if (targetW) item.style.width = targetW;
+        } else {
+          const fallbackW = `${Math.ceil(item.getBoundingClientRect().width)}px`;
+          const widthForActive = targetW || fallbackW;
+          gsap.set(item, { height: openH, width: widthForActive });
+          if (targetW) item.style.width = targetW;
+        }
+      } else {
+        items.forEach((item) => {
+          const h = measureButtonH(item);
+          item.style.height = `${h}px`;
+        });
+      }
+    };
+    const debouncedResize = debounce(handleResize, 200);
+    captureCollapsedWidths();
+    window.addEventListener("resize", debouncedResize, { passive: true });
+  });
+}
+document.addEventListener("DOMContentLoaded", () => {
+  initExpandingFeaturePills();
+});
+</script>
+    </div>
+    <div class="w-embed">
+      <style>
+/* Max width of expanded pill/content */
+[data-feature-pills-init] {
+  --content-item-expanded: 25em;
+}
+@media screen and (max-width: 991px){
+  [data-feature-pills-init] {
+    --content-item-expanded: calc(50% - 0.5em);
+  }
+}
+@media screen and (max-width: 767px){
+  [data-feature-pills-init] {
+    --content-item-expanded: 100%;
+  }
+}
+/* Default state + transition */
+[data-feature-pills-button] {
+  opacity: 1;
+  transition: opacity 400ms ease-in-out 300ms;
+}
+[data-feature-pills-inner] {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out 0ms;
+}
+[data-feature-pills-visual] {
+  opacity: 0;
+  transition: opacity 350ms ease-in-out;
+}
+[data-feature-pills-cover] {
+  opacity: 1;
+  transition: opacity 350ms ease-in-out;
+}
+/* Active Pill */
+[data-feature-pills-item][data-active="true"] [data-feature-pills-button] {
+  opacity: 0;
+  transition: opacity 50ms ease-in-out 0ms;
+}
+[data-feature-pills-item][data-active="true"] [data-feature-pills-inner] {
+  opacity: 1;
+}
+/* Active Visual */
+[data-feature-pills-visual][data-active="true"] {
+  opacity: 1;
+}
+[data-feature-pills-cover][data-active="false"] {
+  opacity: 0;
+}
+/* Close button */
+[data-feature-pills-close] {
+  transform: scale(0) rotate(135deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 500ms cubic-bezier(.7, 0, .3, 1);
+}
+[data-feature-pills-active="true"] [data-feature-pills-close] {
+  transform: scale(1) rotate(45deg);
+  opacity: 1;
+  pointer-events: auto;
+}
+/* 'edit' mode where buttons are hidden and inner content is shown */
+[data-feature-pills-init][data-edit-mode="true"] [data-feature-pills-collection] { 
+  overflow: auto;
+  justify-content: start;
+}
+[data-feature-pills-init][data-edit-mode="true"] [data-feature-pills-button] {
+  display: none;
+}
+[data-feature-pills-init][data-edit-mode="true"] [data-feature-pills-content] {
+  position: relative;
+  pointer-events: auto;
+}
+[data-feature-pills-init][data-edit-mode="true"] [data-feature-pills-inner] {
+  opacity: 1;
+  transform: translate(0px, 0em);
 }
 </style>
     </div>
