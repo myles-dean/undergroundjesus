@@ -677,9 +677,10 @@
   border-radius: 1.25em;
   width: 100%;
   max-width: 75em;
-  height: 45em;
+  min-height: 45em;
+  height: auto;
   position: relative;
-  overflow: clip;
+  overflow: hidden;
 }
 
 .feature-pills__visual-item {
@@ -693,7 +694,8 @@
 .feature-pills__item-mask {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .feature-pills__info-item {
@@ -856,6 +858,10 @@
   padding-top: 0;
   left: 0;
   right: auto;
+}
+
+.demo-card__image.speaker4 {
+  object-position: 85% 25%;
 }
 
 .demo-badge {
