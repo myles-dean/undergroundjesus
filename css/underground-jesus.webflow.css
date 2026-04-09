@@ -160,13 +160,14 @@
 }
 
 .section.scale {
-  height: 100svh;
+  min-height: 100svh;
 }
 
 .section.scale.hero {
   justify-content: center;
   align-items: center;
   display: flex;
+  overflow-y: auto;
   position: relative;
 }
 
