@@ -880,6 +880,7 @@
   grid-row-gap: 2em;
   text-align: left;
   flex-flow: wrap;
+  justify-content: center;
   height: 100%;
   display: flex;
 }
