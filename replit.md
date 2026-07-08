@@ -29,10 +29,10 @@ A static promotional website for the Underground Jesus Conference 2026. Exported
 
 ## Running the Project
 
-The site is served via Python's built-in HTTP server:
+The site is served via a small Python HTTP server (`serve.py`) that sends no-cache headers so browser previews always show the latest edits:
 
 - **Workflow:** "Start application"
-- **Command:** `python3 -m http.server 5000 --bind 0.0.0.0`
+- **Command:** `python3 serve.py`
 - **Port:** 5000
 
 ## Deployment
