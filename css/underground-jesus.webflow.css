@@ -867,6 +867,10 @@
   object-position: 77% 25%;
 }
 
+.demo-card__image.speaker5 {
+  object-position: 50% 30%;
+}
+
 .demo-badge {
   border-radius: 50%;
   width: 50%;
