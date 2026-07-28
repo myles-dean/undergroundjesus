@@ -871,6 +871,10 @@
   object-position: 50% 30%;
 }
 
+.demo-card__image.speaker6 {
+  object-position: 50% 100%;
+}
+
 .demo-badge {
   border-radius: 50%;
   width: 50%;
