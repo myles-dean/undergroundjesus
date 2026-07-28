@@ -1097,6 +1097,10 @@
     width: 100%;
   }
 
+  .demo-card.is--howards .demo-card__before {
+    padding-top: 115%;
+  }
+
   .title {
     font-size: 4em;
   }
