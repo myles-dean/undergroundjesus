@@ -1,20 +1,30 @@
+const toast = document.querySelector(".toast");
+let toastTimer;
+
+function announce(message) {
+  toast.textContent = message;
+  toast.classList.add("show");
+  window.clearTimeout(toastTimer);
+  toastTimer = window.setTimeout(() => toast.classList.remove("show"), 2200);
+}
+
 document.querySelectorAll("[data-copy]").forEach((button) => {
   button.addEventListener("click", async () => {
     const value = button.dataset.copy;
     try {
       await navigator.clipboard.writeText(value);
+      announce(`${value} copied`);
     } catch (error) {
       const input = document.createElement("input");
       input.value = value;
+      input.setAttribute("readonly", "");
+      input.style.position = "absolute";
+      input.style.left = "-9999px";
       document.body.appendChild(input);
       input.select();
-      document.execCommand("copy");
+      const copied = document.execCommand("copy");
       input.remove();
+      announce(copied ? `${value} copied` : `Could not copy ${value}`);
     }
-    const toast = document.querySelector(".toast");
-    toast.textContent = `${value} copied to clipboard`;
-    toast.classList.add("show");
-    window.clearTimeout(window.copyNotice);
-    window.copyNotice = window.setTimeout(() => toast.classList.remove("show"), 2200);
   });
 });
