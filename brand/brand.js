@@ -56,13 +56,13 @@ if (logoLibrary) {
           return `
             <article class="logo-card">
               <div class="logo-card-preview ${preview}">
-                <img src="assets/logos/svg/${filename}.svg" alt="${title}, ${label} color treatment">
+                <img src="/brand/assets/logos/svg/${filename}.svg" alt="${title}, ${label} color treatment">
               </div>
               <div class="logo-card-details">
                 <strong>${label}</strong>
                 <div class="logo-downloads">
-                  <button type="button" data-copy-svg="assets/logos/svg/${filename}.svg">Copy SVG</button>
-                  <a href="assets/logos/png/${filename}.png" download>PNG</a>
+                  <button type="button" data-copy-svg="/brand/assets/logos/svg/${filename}.svg">Copy SVG</button>
+                  <a href="/brand/assets/logos/png/${filename}.png" download>PNG</a>
                 </div>
               </div>
             </article>`;
