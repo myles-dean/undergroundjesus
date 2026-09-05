@@ -3,6 +3,32 @@
   gap: 44px;
 }
 
+.section-heading {
+  display: grid;
+  grid-template-areas:
+    "title label"
+    "description description";
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px 30px;
+}
+
+.section-heading h2 {
+  grid-area: title;
+}
+
+.section-heading .section-label {
+  grid-area: label;
+  justify-self: end;
+  padding-top: 8px;
+  text-align: right;
+}
+
+.section-heading > p:last-child {
+  grid-area: description;
+  grid-column: auto;
+  max-width: 440px;
+}
+
 .bulk-downloads {
   display: flex;
   flex-wrap: wrap;
@@ -127,6 +153,22 @@
 }
 
 @media (max-width: 520px) {
+  .section-heading {
+    display: grid;
+    grid-template-areas:
+      "title label"
+      "description description";
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .section-heading h2 {
+    margin-top: 0;
+  }
+
+  .section-heading .section-label {
+    padding-top: 4px;
+  }
+
   .logo-library {
     gap: 36px;
   }
