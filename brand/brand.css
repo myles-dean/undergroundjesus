@@ -3,3 +3,9 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 .black{background:#000;color:#fff}.red-swatch{background:#e60023;color:#fff}.white-swatch{background:#fff;color:#111}.grey{background:#c4c4c4;color:#111}.charcoal{background:#2d2d2d;color:#fff}
 .font-link-pending{display:inline-block;margin-top:14px;color:#666;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.hero h1,h2{font-family:var(--gotham);font-weight:700;letter-spacing:-.055em;line-height:.86}
+.hero h1{font-size:clamp(72px,11vw,175px)}
+.section-head h2,.asset-heading h2,.usage-intro h2,.type-title h2,.closing h2{font-size:clamp(52px,7.2vw,112px)}
+.color-title h2{font-size:clamp(62px,9vw,140px)}
+.closing h2{font-size:clamp(64px,9vw,145px)}
+@media(max-width:760px){.hero h1{font-size:18vw}.closing h2{font-size:18vw}}
