@@ -61,7 +61,7 @@ if (logoLibrary) {
               <div class="logo-card-details">
                 <strong>${label}</strong>
                 <div class="logo-downloads">
-                  <a href="assets/logos/svg/${filename}.svg" download>SVG</a>
+                  <button type="button" data-copy-svg="assets/logos/svg/${filename}.svg">Copy SVG</button>
                   <a href="assets/logos/png/${filename}.png" download>PNG</a>
                 </div>
               </div>
@@ -69,4 +69,41 @@ if (logoLibrary) {
         }).join("")}
       </div>
     </section>`).join("");
+
+  logoLibrary.addEventListener("click", async (event) => {
+    const button = event.target.closest("[data-copy-svg]");
+    if (!button) return;
+
+    const originalLabel = button.textContent;
+
+    try {
+      const response = await fetch(button.dataset.copySvg);
+      if (!response.ok) throw new Error("Unable to load SVG");
+      const svgMarkup = await response.text();
+
+      try {
+        await navigator.clipboard.writeText(svgMarkup);
+      } catch (error) {
+        const textarea = document.createElement("textarea");
+        textarea.value = svgMarkup;
+        textarea.setAttribute("readonly", "");
+        textarea.style.position = "fixed";
+        textarea.style.opacity = "0";
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        textarea.remove();
+      }
+
+      button.textContent = "Copied";
+      announce("SVG copied to clipboard");
+    } catch (error) {
+      button.textContent = "Try again";
+      announce("Could not copy SVG");
+    }
+
+    window.setTimeout(() => {
+      button.textContent = originalLabel;
+    }, 1800);
+  });
 }

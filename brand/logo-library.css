@@ -3,6 +3,30 @@
   gap: 44px;
 }
 
+.bulk-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -8px 0 34px;
+}
+
+.bulk-downloads a {
+  padding: 12px 14px;
+  border: 1px solid var(--black);
+  background: var(--black);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.bulk-downloads a:hover {
+  border-color: var(--red);
+  background: var(--red);
+}
+
 .logo-group h3 {
   margin: 0 0 14px;
   font-size: 18px;
@@ -44,7 +68,7 @@
 }
 
 .preview-neutral {
-  background: linear-gradient(135deg, var(--white) 50%, var(--red) 50%);
+  background: var(--red);
 }
 
 .logo-card-details {
@@ -65,17 +89,23 @@
   gap: 6px;
 }
 
-.logo-downloads a {
+.logo-downloads a,
+.logo-downloads button {
+  appearance: none;
   padding: 7px 9px;
   border: 1px solid var(--black);
+  background: transparent;
   color: var(--black);
+  cursor: pointer;
+  font-family: inherit;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: .06em;
   text-decoration: none;
 }
 
-.logo-downloads a:hover {
+.logo-downloads a:hover,
+.logo-downloads button:hover {
   border-color: var(--red);
   background: var(--red);
   color: var(--white);
