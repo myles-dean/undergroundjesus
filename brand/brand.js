@@ -28,3 +28,45 @@ document.querySelectorAll("[data-copy]").forEach((button) => {
     }
   });
 });
+
+const logoGroups = [
+  { prefix: "Left", title: "Left-aligned lockup" },
+  { prefix: "Center", title: "Centered lockup" },
+  { prefix: "Icon", title: "Icon" },
+];
+
+const logoColors = [
+  { code: "B", label: "Black", preview: "preview-light" },
+  { code: "W", label: "White", preview: "preview-dark" },
+  { code: "R", label: "Red", preview: "preview-light" },
+  { code: "BW", label: "Black / White", preview: "preview-neutral" },
+  { code: "WR", label: "White / Red", preview: "preview-dark" },
+  { code: "RB", label: "Red / Black", preview: "preview-light" },
+];
+
+const logoLibrary = document.querySelector("#logo-assets");
+
+if (logoLibrary) {
+  logoLibrary.innerHTML = logoGroups.map(({ prefix, title }) => `
+    <section class="logo-group" aria-labelledby="logo-${prefix.toLowerCase()}">
+      <h3 id="logo-${prefix.toLowerCase()}">${title}</h3>
+      <div class="logo-grid">
+        ${logoColors.map(({ code, label, preview }) => {
+          const filename = `${prefix}-${code}`;
+          return `
+            <article class="logo-card">
+              <div class="logo-card-preview ${preview}">
+                <img src="assets/logos/svg/${filename}.svg" alt="${title}, ${label} color treatment">
+              </div>
+              <div class="logo-card-details">
+                <strong>${label}</strong>
+                <div class="logo-downloads">
+                  <a href="assets/logos/svg/${filename}.svg" download>SVG</a>
+                  <a href="assets/logos/png/${filename}.png" download>PNG</a>
+                </div>
+              </div>
+            </article>`;
+        }).join("")}
+      </div>
+    </section>`).join("");
+}
