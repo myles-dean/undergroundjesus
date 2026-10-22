@@ -1,0 +1,1 @@
+- [Editing scope](editing-scope.md) — Keep Vercel hosting; use this workspace for requested site edits and GitHub pushes only.
