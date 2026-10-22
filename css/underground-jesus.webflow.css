@@ -857,6 +857,7 @@
 }
 
 .demo-card__image.speaker3 {
+  filter: brightness(.72);
   object-position: 0% 100%;
   height: 84%;
   padding-top: 0;
