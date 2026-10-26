@@ -754,6 +754,57 @@
   padding-right: 1em;
 }
 
+.attendee-schedule {
+  color: var(--white);
+  scroll-margin-top: 2em;
+}
+
+.attendee-schedule__day {
+  margin-top: 2.5em;
+}
+
+.attendee-schedule__date {
+  margin: 0 0 1em;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.attendee-schedule__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.attendee-schedule__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: .5em 1.5em;
+  padding: 1em 0;
+  border-top: 1px solid #eeeeee30;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.attendee-schedule__time {
+  font-variant-numeric: tabular-nums;
+}
+
+.attendee-schedule__note {
+  margin: 1.5em 0 0;
+  color: #bdbdbd;
+  font-size: .875em;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+  .attendee-schedule__row {
+    grid-template-columns: 1fr;
+    gap: .25em;
+  }
+}
+
 .text-span {
   color: var(--light-gray);
   text-decoration: line-through;
